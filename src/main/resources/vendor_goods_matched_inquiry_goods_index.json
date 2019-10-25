@@ -1,0 +1,423 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "inquiryGoodsId": {
+        "type": "long"
+      },
+      "num": {
+        "type": "float"
+      },
+      "description": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "memo": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "safetyStockNum": {
+        "type": "float"
+      },
+      "spec": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "platformCategoryName": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "attachment": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "inquiryId": {
+        "type": "long"
+      },
+      "quoteCount": {
+        "type": "long"
+      },
+      "demandDepartmentName": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "demandMemberName": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "model": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "id": {
+        "type": "long"
+      },
+      "sku": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "brand": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "packageNum": {
+        "type": "float"
+      },
+      "delivery": {
+        "type": "long"
+      },
+      "isAutoMatching": {
+        "type": "boolean"
+      },
+      "address": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "orgCategoryName": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "quoteEditLimit": {
+        "type": "boolean"
+      },
+      "partakeCount": {
+        "type": "long"
+      },
+      "organizationCompanyName": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "url": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "barCode": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "unit": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "expire": {
+        "format": "yyyy-MM-dd HH:mm:ss",
+        "type": "date"
+      },
+      "name": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "time": {
+        "format": "yyyy-MM-dd HH:mm:ss",
+        "type": "date"
+      },
+      "status": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "vendorGoodsMatchingQuotations": {
+        "properties": {
+          "technical": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "catalog": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "packageUnit": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "description": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "memo": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "vendorId": {
+            "type": "long"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "minOrder": {
+            "type": "float"
+          },
+          "spec": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "freightRate": {
+            "type": "float"
+          },
+          "goldenTax": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "price": {
+            "type": "float"
+          },
+          "warranty": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "model": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "expiry": {
+            "type": "long"
+          },
+          "id": {
+            "type": "long"
+          },
+          "sku": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "stock": {
+            "type": "long"
+          },
+          "brand": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "packageNum": {
+            "type": "float"
+          },
+          "delivery": {
+            "type": "long"
+          },
+          "images": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "pretaxPrice": {
+            "type": "float"
+          },
+          "packaging": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "vendorName": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "unspsc": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "barCode": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "deliveryPlace": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "taxRate": {
+            "type": "float"
+          },
+          "unit": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "platformRate": {
+            "type": "float"
+          },
+          "name": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "serviceRate": {
+            "type": "float"
+          },
+          "time": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "category": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            }
+          },
+          "saled": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

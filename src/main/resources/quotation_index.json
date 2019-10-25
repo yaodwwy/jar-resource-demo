@@ -1,0 +1,63 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "delivery": {
+        "type": "integer"
+      },
+      "address": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "namefull": {
+        "type": "keyword"
+      },
+      "num": {
+        "type": "double"
+      },
+      "modelfull": {
+        "type": "keyword"
+      },
+      "start": {
+        "type": "integer"
+      },
+      "vendorName": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "brandfull": {
+        "type": "keyword"
+      },
+      "price": {
+        "type": "double"
+      },
+      "modelfullNoTransferred": {
+        "type": "keyword"
+      },
+      "name": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "model": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "id": {
+        "type": "long"
+      },
+      "time": {
+        "format": "yyyy-MM-dd HH:mm:ss",
+        "type": "date"
+      },
+      "brand": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "platform_category_name": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "namefull": {
+        "type": "keyword"
+      },
+      "modelfull": {
+        "type": "keyword"
+      },
+      "name": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "model": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "id": {
+        "type": "long"
+      },
+      "time": {
+        "format": "yyyy-MM-dd HH:mm:ss",
+        "type": "date"
+      },
+      "brand": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      },
+      "brandfull": {
+        "type": "keyword"
+      },
+      "memberid": {
+        "analyzer": "ik_max_word",
+        "type": "text"
+      }
+    }
+  }
+}
